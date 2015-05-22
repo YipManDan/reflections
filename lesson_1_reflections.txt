@@ -1,0 +1,48 @@
+
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+In the example given, an old and new version of a file was kept
+this allowed for changes to be observed using the 'diff' command in the terminal.
+Viewing the diff allowed me to quickly notice which parts of the file had been changed
+while ignoring the parts of the file that remained unchanged. 
+By narrowing my scope down I was able to quickly determine where the error was introduced.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+Access to the entire history of a file would allow for quick
+checks of bugs and determining when they were introduced.
+Also, it would allow for a review of direction taken when coding.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+Pros:
+Logical connections within a commit
+User must make a discrete decision when commiting
+
+Cons:
+Open to user error, such as neglecting to save good sized commits
+Ensures that commits are made
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, wihle others, like Google Docs, treat each file separately?
+
+Git is designed for code and the method used is saving commits under a single logical connection,
+in coding, logical connections can go accross multiple files.
+In the case of Google Docs, documents are separate entities because they are not meant to be dependant upon each other
+thus, commits treat each file separately.
+
+How can you use the commands git log and git diff to view the history of the file?
+
+Git log will show all the commits that have been made.
+Git diff shows the difference between two commits made.
+Together, this allows us to trace the changes made between commits and view the history of the file.
+
+How might using version control make you more confident to make changes that could break something?
+
+You know that there are previous commits that are saved and that you have the ability to jump back to those commits,
+thus allowing you to confidently make changes that could break something because you know that if you break something
+you could always return to a previous commit.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+All code longer than 200 lines.
