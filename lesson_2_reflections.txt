@@ -24,3 +24,7 @@ By displaying the commits as a series of nodes pointing towards each other we ar
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
 The result of merging two branches together is a combination of the changes that both branches made. The code is merged together based upon the point where the two branches diverged, removing code which was removed by one and adding code added by another. The diagram is drawn in the way it is to represent the splitting of a branch and the merging into a single node which is where we can continue from. 
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+The obvious pro of Git's automatic merging is ease-of-use. If the automatic merge is often successful then merging branches is simplified and the users will be more likely to use branches and do so often. The con, also the pro of manual merging is that the automatic merging system is not holistic, nor is it incredibly advanced. Manual merging allows for more control and ensures that changes are consistent and intended.
