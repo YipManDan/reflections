@@ -7,3 +7,20 @@ When a git repository is initialized a hidden folder which will contain the comm
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging area is a temporary holding ground for files that the user is interested in committing. The value is that multiple files can be placed in the staging area, alloweing for specific choices in which files to commit and allowing the user to double check his or her actions.
+
+How can you use the staging area to make sure that you have one commit per logical change?
+
+Using git diff we can compare what is in the staging area to what is in the current head. This lets us see what changes have been made that we want to commit. By checking this we can ensure that only one logical commit is made.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+When you want to try to implement a new feature while still keeping/working on the master branch. Branches allows us to split such that the new feature can be implemented on the new branch while keeping the master and allowing work on it.
+Developmental branch. Experimental branch. Collaboration. 
+
+How do the diagrams help you visualize the branch structure?
+
+By displaying the commits as a series of nodes pointing towards each other we are able to visualize how the branches are split and why a certain commit may be lost if not attributed a branch name. 
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The result of merging two branches together is a combination of the changes that both branches made. The code is merged together based upon the point where the two branches diverged, removing code which was removed by one and adding code added by another. The diagram is drawn in the way it is to represent the splitting of a branch and the merging into a single node which is where we can continue from. 
